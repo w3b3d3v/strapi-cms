@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "deals",
+  "info": {
+    "singularName": "deal",
+    "pluralName": "deals",
+    "displayName": "Deal"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "customer": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::customer.customer",
+      "inversedBy": "deals"
+    },
+    "tag": {
+      "type": "string",
+      "required": true
+    },
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "videos": {
+      "type": "integer"
+    },
+    "articles": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "milestones": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::milestone.milestone",
+      "mappedBy": "deal"
+    }
+  }
+}
