@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "playlists",
+  "info": {
+    "singularName": "playlist",
+    "pluralName": "playlists",
+    "displayName": "Playlist",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "playlist_id": {
+      "type": "string",
+      "required": true
+    },
+    "playlist_published_at": {
+      "type": "date",
+      "required": true
+    },
+    "playlist_name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
