@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "videos",
+  "info": {
+    "singularName": "video",
+    "pluralName": "videos",
+    "displayName": "Video",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "video_id": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "video_published_at": {
+      "type": "date"
+    },
+    "position": {
+      "type": "integer",
+      "required": true
+    },
+    "playlists": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::playlist.playlist"
+    }
+  }
+}
