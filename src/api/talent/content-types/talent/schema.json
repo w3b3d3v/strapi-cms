@@ -1,21 +1,26 @@
 {
   "kind": "collectionType",
-  "collectionName": "users_data",
+  "collectionName": "talents",
   "info": {
-    "singularName": "user-data",
-    "pluralName": "users-data",
-    "displayName": "User data",
-    "description": ""
+    "singularName": "talent",
+    "pluralName": "talents",
+    "displayName": "Talent"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
+    "jobs": {
+      "type": "string"
+    },
     "name": {
       "type": "string"
     },
-    "jobs": {
+    "state": {
+      "type": "string"
+    },
+    "city": {
       "type": "string"
     },
     "techs": {

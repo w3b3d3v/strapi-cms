@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * user-data service
+ * talent service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::user-data.user-data');
+module.exports = createCoreService('api::talent.talent');
