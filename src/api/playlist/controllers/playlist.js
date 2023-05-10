@@ -28,7 +28,5 @@ module.exports = createCoreController('api::playlist.playlist', {
           ctx.status = 500;
           ctx.body = { message: err.message, status: 500 };
         }
-        
       }
 });
-

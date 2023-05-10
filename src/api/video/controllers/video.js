@@ -30,6 +30,5 @@ module.exports = createCoreController('api::video.video', {
           ctx.status = 500;
           ctx.body = { message: err.message, status: 500 };
         }
-        
       }
 });
